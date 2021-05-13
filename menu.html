@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Brazil</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="js/main.js" defer></script>
+  </head>
+  <body background="img/bg6.jpg">
+
+    
+    <div class="container" >
+
+      
+   
+      <div class="nav-wrapper">
+        
+        <div class="left-side">
+          <div class="nav-link active-nav-link">
+            <a href="menu.html"> Menu </a>
+          </div>
+          <div class="nav-link ">
+            <a href="kitchen.html"> Kitchen </a>
+          </div>
+          <div class="nav-link">
+            <a href="index.html">Login</a></div>
+        </div>
+      
+      </div>
+      
+        <div class="center-page">
+          <div class="restaurant-menu">Restaurant Brazil</div><br><br><br><br>
+          <div class="menu-page">
+            
+          <br><br>
+            <br><br>
+            <div class="menu-option">
+              <div class="option-title">Order Menu  Choose below</div>
+              <br>
+              <table>
+                <tr class="starters">
+                    <th>Starters</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td> <i class="fas fa-leaf"></i> Pão de Queijo (Cheese Bread)</td>
+                    <td><input type="number" id="qtt1" name="qtt" value="0" min="0" max="99" size="2" data-price="4.50"></td>
+                    <td>€4.50</td>
+                </tr>
+                <tr>
+                    <td>Coxinha (Chiken Croquettes)</td>
+                    <td><input type="number" id="qtt3" name="qtt" value="0"min="0" max="99"size="2" data-price="5"></td>
+                    <td>€5.00</td>
+                </tr>
+                <tr>
+                    <td>Loaded Chips (w/ Bacon & Cheddar)</td>
+                    <td><input type="number" id="qtt4" name="qtt" value="0"min="0" max="99"size="2" data-price="6.50"></td>
+                    <td>€6.50</td>
+                </tr>
+                <tr class="main">
+                  <th>Main Course</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+              </tr>
+              <tr>
+                <td><i class="fas fa-leaf"></i> Vegetarian Strogonoff</td>
+                <td><input type="number" id="qtt2" name="qtt" value="0" min="0" max="99" size="2" data-price="9"></td>
+                <td>€9.00</td>
+              </tr>
+              <tr>
+                <td>Chicken Strogonoff</td>
+                <td><input type="number" id="qtt5" name="qtt" value="0"min="0" max="99"size="2" data-price="11"></td>
+                <td>€11.00</td>
+               </tr>
+               <tr>
+                <td>Feijoada (Black beans and pork stew)</td>
+                <td><input type="number" id="qtt6" name="qtt" value="0"min="0" max="99"size="2" data-price="12"></td>
+                <td>€12.00</td>
+                </tr>
+                <tr>
+                    <td>Picanha (Rump Steak)</td>
+                    <td><input type="number" id="qtt7" name="qtt" value="0"min="0" max="99"size="2" data-price="15"></td>
+                    <td>€15.00</td>
+                </tr>
+
+                <tr class="desserts">
+                  <th>Desserts</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+                <tr>
+                  <td>Pudim</td>
+                  <td><input type="number" id="qtt8" name="qtt" value="0" min="0" max="99" size="2" data-price="4.50"></td>
+                  <td>€4.50</td>
+                </tr>
+                <tr>
+                  <td>Carrot Cake</td>
+                  <td><input type="number" id="qtt9" name="qtt" value="0"min="0" max="99"size="2" data-price="5"></td>
+                  <td>€5.00</td>
+                </tr>
+                <tr>
+                  <td>Pave</td>
+                  <td><input type="number" id="qtt10" name="qtt" value="0"min="0" max="99"size="2" data-price="6.50"></td>
+                  <td>€6.50</td>
+                </tr>
+              <tr class="drinks">
+                <th>Drinks</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Coke</td>
+                <td><input type="number" id="qtt11" name="qtt" value="0" min="0" max="99" size="2" data-price="1.50"></td>
+                <td>€1.50</td>
+              </tr>
+              <tr>
+                <td>Guarana (Brazilian Berry Soda)</td>
+                <td><input type="number" id="qtt12" name="qtt" value="0"min="0" max="99"size="2" data-price="2"></td>
+                <td>€2.00</td>
+              </tr>
+            <tr>
+                <td>Orange Juice</td>
+                <td><input type="number" id="qtt13" name="qtt" value="0"min="0" max="99"size="2" data-price="2"></td>
+                <td>€2.00</td>
+            </tr> 
+                <tr>
+                    <td class="total">&nbsp;</td>
+                        <td class="total right"><strong>Total:</strong></td>
+                        <td class="total"><strong>
+                                <div id="Total">€0.00</div>
+                </tr>
+            </table>
+            </div>
+
+              <br><br>
+            <div class="order-breakdown">
+              <div class="option-title">Order Breakdown</div><br>
+              <table>
+                <tr >
+                    <th>&nbsp;</th>
+                    <th></th>
+                    <th>Bill Cost</th>
+                </tr>
+                <tr>
+                    <td>Starters</td>
+                    <td></td>
+                    <td id="totalStarters">€0.00</td>
+                </tr>
+                <tr>
+                    <td>Main Course</td>
+                    <td></td>
+                    <td id="totalMain">€0.00</td>
+                </tr>
+                <tr>
+                    <td>Desserts</td>
+                    <td></td>
+                    <td id="totalDesserts">€0.00</td>
+                </tr>
+                <tr>
+                    <td>Drinks</td>
+                    <td></td>
+                    <td id="totalDrinks">€0.00</td>
+                </tr>
+                <tr>
+                  <td> &nbsp;</td>
+                  <td> &nbsp;</td>
+                  <td> &nbsp;</td>
+              </tr>
+              <tr>
+                <tr>
+                  <td class="total">&nbsp;</td>
+                      <td class="total right">Total:</td>
+                      <td class="total">
+                              <div id="TotalClient">€0</div></td>
+              </tr>
+            </tr>
+            <tr>
+              <td> &nbsp;</td>
+              <td> &nbsp;</td>
+              <td> &nbsp;</td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-leaf"></i> Vegetarian</td>
+            <td> &nbsp;</td>
+            <td id="vegetarian"> €0.00</td>
+        </tr>
+        <tr>
+          <td> Non-Vegetarian</td>
+          <td> &nbsp;</td>
+          <td id="non-vegetarian"> €0.00</td>
+      </tr>
+      <tr>
+        <td> &nbsp;</td>
+        <td> &nbsp;</td>
+        <td> &nbsp;</td>
+    </tr>
+
+               
+            </table>
+            </div>
+            <div class="menu-customer">
+            <div class="option-title">Customers</div>
+            <h2>A list of our recent customers</h2>
+            <button class="btn btn-primary" id="myBtn">Get to know them</button>
+            <p id="output"> </p>
+          </div>
+          </div>
+          
+          
+        </div>
+
+        
+    </div>
+
+    <script src="js/menuCalc.js"></script>
+    
+  </body>
+</html>
