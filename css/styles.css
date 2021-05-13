@@ -1,0 +1,298 @@
+/* Default styles */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+/* Middle of the page */
+/* Restaurant Name */
+.restaurant-name,
+.restaurant-menu,
+.restaurant-kitchen {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: teal;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant-name {
+  height: 60px;
+  padding: 60px 10px 30px 10px;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+
+.restaurant-kitchen{
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+
+}
+
+.restaurant-menu {
+  text-shadow: 1px 1px 1px lightskyblue;
+}
+.center-page-login {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+}
+.page-options {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu-page {
+  display: flex;
+  width: 97%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.page-option {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.option-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 0 0 85% 85% / 30%;
+  text-transform: uppercase;
+  color: teal;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+}
+
+/* left and right side links */
+.left-side {
+  display: flex;
+}
+.right-side {
+  text-transform: uppercase;
+}
+.nav-wrapper > .right-side > div {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.nav-wrapper > .left-side > div {
+  margin-right: 10px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.nav-link {
+  height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid white !important;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
+.nav-link a,
+#customers {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link a,
+#customers:hover {
+  color: white;
+  font-style: bold;
+  font-weight: 500;
+}
+
+/* Password Validator */
+/* Style the container for inputs */
+.passContainer {
+  padding: 10px 10px 10px 10px;
+  color: teal;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* Enter button */
+input[type="submit"] {
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.637);
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  width: 45%;
+}
+
+#message p {
+  font-size: 15px;
+}
+
+/* Add a green checkmark when the requirements are right */
+.valid {
+  color: teal;
+}
+
+.valid:before {
+  position: relative;
+  left: -15px;
+  content: "✔";
+}
+
+/* Add a red "x" when the requirements are wrong */
+.invalid {
+  color: rgb(184, 10, 10);
+}
+
+.invalid:before {
+  position: relative;
+  left: -15px;
+  content: "✖";
+}
+
+/* Menu Page */
+/* Table Menu */
+table,
+th,
+td {
+  border: 1px solid gray;
+  color: rgb(255, 255, 255);
+}
+
+td {
+  padding: 5px 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+input[type="number"] {
+  box-sizing: unset;
+}
+
+table {
+  font-size: 15px;
+  width: 100%;
+  background: rgba(70, 73, 73, 0.692);
+  margin-top: 20px;
+}
+
+table th {
+  background-color: teal;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+td.total {
+  background-color: teal;
+}
+
+.list-customers,
+h2 {
+  color: white;
+  list-style-type: none;
+}
+
+.img-customer {
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  padding: 5px;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+/* Kitchen styles */
+
+.dishes-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.dish-wrapper {
+  position: relative;
+}
+
+.dish-img {
+  height: 350px;
+  width: 100%;
+  border-radius: 1%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.233) inset;
+
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.img-text .subtitle {
+  font-weight: 600;
+  transition: 0.5s;
+  color: transparent;
+}
+.img-text:hover .subtitle {
+  font-weight: 600;
+  color: teal;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(30%);
+}
