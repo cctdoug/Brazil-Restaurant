@@ -510,4 +510,29 @@ h2 {
     text-align: center;
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .center-page-login {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .center-page {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  .dishes-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+}
 /* ----------------------------------- */
