@@ -30,8 +30,6 @@ myInput.onkeyup = function () {
   }
   // validate special char
   var specialChar = /[!@#$%^&*]/g;
-  // [!@#$%^&*]
-  // [!@#$%^&*]
   if (myInput.value.match(specialChar)) {
     char.classList.remove("invalid");
     char.classList.add("valid");

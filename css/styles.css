@@ -28,7 +28,7 @@ body {
 }
 
 .restaurant-kitchen{
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 3px 3px 3px black;
   margin: 0;
 
 }
@@ -53,6 +53,9 @@ body {
   align-items: flex-start;
 }
 
+.center-page{
+  margin: 10px;
+}
 .page-option {
   position: relative;
   align-items: center;
@@ -60,7 +63,7 @@ body {
 }
 
 .option-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
   border-radius: 0 0 85% 85% / 30%;
@@ -74,6 +77,10 @@ body {
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.menu-page, .order-breakdown{
+  background-color: rgba(0, 0, 0, 0.295);
 }
 
 .nav-wrapper {
@@ -140,6 +147,12 @@ body {
   text-transform: uppercase;
 }
 
+label{
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
 input {
   width: 50%;
   padding: 10px;
@@ -152,6 +165,9 @@ input {
 
 /* Enter button */
 input[type="submit"] {
+  font-size: 15px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px black;
   background-color: teal;
   color: white;
   font-weight: bold;
@@ -196,11 +212,16 @@ input[type="submit"] {
 
 /* Menu Page */
 /* Table Menu */
-table,
+.table-menu, .table-bill
 th,
 td {
   border: 1px solid gray;
   color: rgb(255, 255, 255);
+  
+}
+
+.bill-col {
+  width: 100px;
 }
 
 td {
@@ -212,33 +233,24 @@ input[type="number"] {
   box-sizing: unset;
 }
 
-table {
+.table-menu, .table-bill {
   font-size: 15px;
   width: 100%;
   background: rgba(70, 73, 73, 0.692);
   margin-top: 20px;
+
 }
 
-table th {
+ th {
   background-color: teal;
   text-transform: uppercase;
   font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-td.total {
+td.total, td.total.right {
   background-color: teal;
-}
-
-.list-customers,
-h2 {
-  color: white;
-  list-style-type: none;
-}
-
-.img-customer {
-  border-radius: 50%;
-  float: left;
-  margin: 0;
-  padding: 5px;
+  font-weight: 400;
 }
 
 ul {
@@ -295,4 +307,64 @@ ul {
 .img-darken {
   transition: 1s;
   filter: brightness(30%);
+}
+
+/* Customers Styles */
+
+.menu-customer {
+width: 400px;
+background-color: rgba(0, 0, 0, 0.295);
+
+}
+.menu-customer h2{
+  text-align: center;
+}
+#myBtn{
+  margin-left: 30%;
+  color: white;
+  font-weight: 650;
+  background-color: teal;
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.list-customers,
+h2 {
+  color: white;
+  list-style-type: none;
+  text-shadow: 2px 2px 2px black;
+ 
+  
+}
+
+.list-customers{
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  text-indent: 5%;
+  text-overflow: ellipsis;
+  background-color: rgba(0, 128, 128, 0.514);
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 20%;
+   
+
+}
+
+.img-customer {
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  padding: 5px;
+}
+
+#output{
+  margin-left: 10%;
+}
+
+.list-customer-email{
+  display: inline-flex;
 }

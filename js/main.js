@@ -37,9 +37,9 @@ function getData() {
                         <img src="${lists.picture.medium}" class="img-customer">
                         <ul class="list-customers">
                             <li class="list-customer-name">Name: ${lists.name.first}</li>
-                            <li class="list-customer-email"> ${lists.email}</li>
                             <li class="list-customer-city">City: ${lists.location.city}</li>
                             <li class="list-customer-country">Country: ${lists.location.country}</li>
+                            <li class="list-customer-email"> ${lists.email}</li>
 
                         </ul>
                    

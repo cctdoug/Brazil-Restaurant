@@ -11,6 +11,8 @@
     <script src="js/login.js" defer></script>
   </head>
 
+<!-- This is the login page, the first to show, and requires a Staff name and password to get into the menu -->
+<!-- I decided to do this to add a feeling of limited access - It can be implemented in the future -->
 
   <body background="img/bg3.jpeg">
     <div class="container">
@@ -20,9 +22,11 @@
           <div class="page-option">
             <div class="option-title">Validate staff password</div><br>
             <div class="passContainer">
+              <!-- The form that asks for name and password, both are required - I got the idea from W3Schools -->
+              <!-- After fulfilled, it takes the user to the Menu Page -->
               <form action="menu.html">
                 <label for="usrname">Name</label><br>
-                <input type="text" id="usrname" name="usrname" required />
+                <input type="text" id="usrname" name="usrname" title="Your staff name, please" required />
                 <br>
                 <label for="psw">Password</label><br>
                 <input
@@ -37,7 +41,8 @@
                 <input type="submit" value="Enter" />
               </form>
                 </div>
-
+                <!-- This is the message that appears when the user clicks on the password field - Also an idea from W3Schools-->
+                <!-- A reminder of what it's needed for a password to be accepted -->
              <div id="message" >
               <h4>Password must contain the following:</h4>
               <p id="length" class="invalid">Minimum <b>8 characters</b></p>
@@ -51,9 +56,5 @@
           </div>
             </div>
         </div>
-        
-    
-
-    <script></script>
   </body>
 </html>
