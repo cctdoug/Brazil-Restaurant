@@ -8,88 +8,8 @@ body {
   margin: 0px;
 }
 
-/* Middle of the page */
-/* Restaurant Name */
-.restaurant-name,
-.restaurant-menu,
-.restaurant-kitchen {
-  font-family: "Dancing Script", cursive;
-  font-size: 70px;
-  color: teal;
-  align-items: center;
-  text-align: center;
-}
-
-.restaurant-name {
-  height: 60px;
-  padding: 60px 10px 30px 10px;
-  text-shadow: 2px 2px 2px black;
-  margin: 0;
-}
-
-.restaurant-kitchen{
-  text-shadow: 3px 3px 3px black;
-  margin: 0;
-
-}
-
-.restaurant-menu {
-  text-shadow: 1px 1px 1px lightskyblue;
-}
-.center-page-login {
-  margin: auto;
-  width: 50%;
-  padding: 0px;
-  text-align: center;
-}
-.page-options {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.menu-page {
-  display: flex;
-  width: 97%;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.center-page{
-  margin: 10px;
-}
-.page-option {
-  position: relative;
-  align-items: center;
-  text-align: center;
-}
-
-.option-title {
-  font-size: 22px;
-  font-weight: 600;
-  text-shadow: 2px 2px 2px black;
-  border-radius: 0 0 85% 85% / 30%;
-  text-transform: uppercase;
-  color: teal;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.menu-page, .order-breakdown{
-  background-color: rgba(0, 0, 0, 0.295);
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 20px 10px 20px;
-}
-
 /* left and right side links */
+
 .left-side {
   display: flex;
 }
@@ -138,6 +58,51 @@ body {
   font-weight: 500;
 }
 
+/* ----------------------------------- */
+
+/* Middle of the page */
+/* Restaurant Name */
+.restaurant-name,
+.restaurant-menu,
+.restaurant-kitchen {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: teal;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant-name {
+  height: 60px;
+  padding: 60px 10px 30px 10px;
+  text-shadow: 2px 2px 2px black;
+  margin: 0;
+}
+
+.restaurant-kitchen {
+  text-shadow: 3px 3px 3px black;
+  margin: 0;
+}
+
+.restaurant-menu {
+  text-shadow: 1px 1px 1px lightskyblue;
+}
+
+/* ----------------------------------- */
+
+/* Login Page Styles */
+
+.center-page-login {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+  text-align: center;
+}
+.page-options {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 /* Password Validator */
 /* Style the container for inputs */
 .passContainer {
@@ -147,7 +112,7 @@ body {
   text-transform: uppercase;
 }
 
-label{
+label {
   font-size: 20px;
   font-weight: 600;
   text-shadow: 2px 2px 2px black;
@@ -210,14 +175,61 @@ input[type="submit"] {
   content: "✖";
 }
 
-/* Menu Page */
+/* ----------------------------------- */
+
+/* Menu Page Styles */
+
+.menu-page {
+  display: flex;
+  width: 97%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.center-page {
+  margin: 10px;
+}
+.page-option {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.option-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 0 0 85% 85% / 30%;
+  text-transform: uppercase;
+  color: teal;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.menu-page,
+.order-breakdown {
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+}
+
 /* Table Menu */
-.table-menu, .table-bill
-th,
+
+.table-menu,
+.table-bill th,
 td {
   border: 1px solid gray;
   color: rgb(255, 255, 255);
-  
 }
 
 .bill-col {
@@ -233,22 +245,23 @@ input[type="number"] {
   box-sizing: unset;
 }
 
-.table-menu, .table-bill {
+.table-menu,
+.table-bill {
   font-size: 15px;
   width: 100%;
   background: rgba(70, 73, 73, 0.692);
   margin-top: 20px;
-
 }
 
- th {
+th {
   background-color: teal;
   text-transform: uppercase;
   font-weight: 500;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-td.total, td.total.right {
+td.total,
+td.total.right {
   background-color: teal;
   font-weight: 400;
 }
@@ -256,6 +269,65 @@ td.total, td.total.right {
 ul {
   padding-left: 10px;
 }
+
+/* ----------------------------------- */
+
+/* Customers Styles */
+
+.menu-customer {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.295);
+}
+.menu-customer h2 {
+  text-align: center;
+}
+#myBtn {
+  margin-left: 30%;
+  color: white;
+  font-weight: 650;
+  background-color: teal;
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.list-customers,
+h2 {
+  color: rgba(255, 255, 255, 0.822);
+  list-style-type: none;
+  text-shadow: 2px 2px 2px black;
+}
+
+.list-customers {
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  text-indent: 5%;
+  text-overflow: ellipsis;
+  background-color: rgba(0, 128, 128, 0.514);
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 20%;
+}
+
+.img-customer {
+  border-radius: 50%;
+  float: left;
+  margin: 0;
+  padding: 5px;
+}
+
+#output {
+  margin-left: 10%;
+}
+
+.list-customer-email {
+  display: inline-flex;
+}
+
+/* ----------------------------------- */
 
 /* Kitchen styles */
 
@@ -278,7 +350,6 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.233) inset;
-
 }
 
 .img-text {
@@ -308,63 +379,135 @@ ul {
   transition: 1s;
   filter: brightness(30%);
 }
+/* ----------------------------------- */
 
-/* Customers Styles */
+/* MEDIA QUERIES */
 
-.menu-customer {
-width: 400px;
-background-color: rgba(0, 0, 0, 0.295);
+@media (min-width: 1020px) and (max-width: 1248px) {
+  .center-page-login {
+    margin: auto;
+    width: 70%;
+    padding: 0px;
+    text-align: center;
+  }
 
-}
-.menu-customer h2{
-  text-align: center;
-}
-#myBtn{
-  margin-left: 30%;
-  color: white;
-  font-weight: 650;
-  background-color: teal;
-  font-size: medium;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
+  .menu-page {
+    display: grid;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+  }
 
-.list-customers,
-h2 {
-  color: white;
-  list-style-type: none;
-  text-shadow: 2px 2px 2px black;
- 
-  
+  .dishes-wrapper {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .img-text {
+    padding: 10px;
+  }
 }
 
-.list-customers{
-  margin: 20px;
-  padding: 10px;
-  padding-bottom: 15px;
-  padding-right: 20px;
-  text-indent: 5%;
-  text-overflow: ellipsis;
-  background-color: rgba(0, 128, 128, 0.514);
-  border-bottom-right-radius: 10%;
-  border-top-left-radius: 20%;
-   
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center-page-login {
+    margin: auto;
+    width: 70%;
+    padding: 0px;
+    text-align: center;
+  }
 
+  .dishes-wrapper {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .img-text {
+    padding: 10px;
+  }
 }
 
-.img-customer {
-  border-radius: 50%;
-  float: left;
-  margin: 0;
-  padding: 5px;
+@media (min-width: 764px) and (max-width: 1024px) and (orientation: landscape) {
+  .center-page-login {
+    margin: auto;
+    width: 80%;
+    padding: 0px;
+    text-align: center;
+  }
+  .menu-page {
+    display: grid;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+  }
+  .dishes-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 90%;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .img-text {
+    padding: 10px;
+  }
 }
 
-#output{
-  margin-left: 10%;
+@media (min-width: 481px) and (max-width: 767px) {
+  .center-page-login {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .menu-page {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .dishes-wrapper {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .dishes-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 90%;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 
-.list-customer-email{
-  display: inline-flex;
+@media (min-width: 320px) and (max-width: 480px) {
+  .center-page-login {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .center-page {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+  .dishes-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
 }
+/* ----------------------------------- */

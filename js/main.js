@@ -1,5 +1,5 @@
-
 // Dish images darken on hover
+// I got this idea from a mini course I did at Udemy
 const dishes = document.querySelectorAll(".dish-wrapper");
 
 dishes.forEach((dish) => {
@@ -11,26 +11,20 @@ dishes.forEach((dish) => {
   });
 });
 
-
 //Get Btn And Create Function
 document.getElementById("myBtn").addEventListener("click", getData);
 
 function getData() {
-  // console.log('test');
-
   //Get API
   fetch("https://randomuser.me/api/?results=5&nat=br,ie")
     .then((res) => res.json())
     .then((data) => {
-      // console.log(data);
-
       let author = data.results;
-      // console.log(author);
 
       //Get Data Value
       let output = "";
 
-      //Get Data Loop Through
+      //Data Loop Through
       author.forEach(function (lists) {
         output += `
                 
@@ -46,7 +40,7 @@ function getData() {
                 `;
       });
 
-      //Show On Our Screen All Data
+      //Show On Screen All Data
       document.getElementById("output").innerHTML = output;
     });
 }

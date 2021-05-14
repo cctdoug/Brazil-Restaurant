@@ -57,6 +57,7 @@ myInput.onkeyup = function () {
     length.classList.add("invalid");
   }
 };
+
 // Message password requirement
 $(document).ready(function () {
   $("#psw").click(function () {

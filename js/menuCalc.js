@@ -1,4 +1,5 @@
 //Menu Table
+// Calculation of the total - Then separeted by Starters, Main, Desserts and Drinks
 
 var total_items = 13;
 
@@ -16,17 +17,17 @@ function CalculateItemsValue() {
   document.getElementById("Total").innerHTML = "€" + total.toFixed(2);
   document.getElementById("TotalClient").innerHTML = "€" + total.toFixed(2);
 
+  // Total Starters
   for (let i = 1; i <= 4; i++) {
     if (i != 2) {
       itemID = document.getElementById("qtt" + i);
-      totalStarters =
-        totalStarters + itemID.value * itemID.getAttribute("data-price");
+      totalStarters = totalStarters + itemID.value * itemID.getAttribute("data-price");
     }
   }
 
-  document.getElementById("totalStarters").innerHTML =
-    "€" + totalStarters.toFixed(2);
+  document.getElementById("totalStarters").innerHTML = "€" + totalStarters.toFixed(2);
 
+  // Total Main Course
   for (let i = 2; i <= 7; i++) {
     if (i != 3 && i != 4) {
       itemID = document.getElementById("qtt" + i);
@@ -36,28 +37,28 @@ function CalculateItemsValue() {
 
   document.getElementById("totalMain").innerHTML = "€" + totalMain.toFixed(2);
 
+  // Total Desserts
   for (let i = 8; i <= 10; i++) {
     itemID = document.getElementById("qtt" + i);
-    totalDesserts =
-      totalDesserts + itemID.value * itemID.getAttribute("data-price");
+    totalDesserts = totalDesserts + itemID.value * itemID.getAttribute("data-price");
   }
-  document.getElementById("totalDesserts").innerHTML =
-    "€" + totalDesserts.toFixed(2);
+  document.getElementById("totalDesserts").innerHTML = "€" + totalDesserts.toFixed(2);
 
+  // Total Drinks
   for (let i = 11; i <= 13; i++) {
     itemID = document.getElementById("qtt" + i);
-    totalDrinks =
-      totalDrinks + itemID.value * itemID.getAttribute("data-price");
+    totalDrinks = totalDrinks + itemID.value * itemID.getAttribute("data-price");
   }
-  document.getElementById("totalDrinks").innerHTML =
-    "€" + totalDrinks.toFixed(2);
+  document.getElementById("totalDrinks").innerHTML = "€" + totalDrinks.toFixed(2);
 }
 
 document.querySelectorAll('[id^="qtt"]').forEach((item) => {
   item.addEventListener("change", CalculateItemsValue);
 });
 
-//Calculate Vegetarian
+
+
+//Calculates Vegetarian
 
 function CalculateVegetarian() {
   var totalVeg = 0;
@@ -76,7 +77,7 @@ document.querySelectorAll('[id^="qtt"]').forEach((item) => {
   item.addEventListener("change", CalculateVegetarian);
 });
 
-//Calculate Non-Vegetarian
+//Calculates Non-Vegetarian
 
 function CalculateNonVeg() {
   var totalNonVeg = 0;
