@@ -3,7 +3,7 @@
 
 ## Desription
 
- Project created as part of an <a href="./CA3 - Client-Side Programming - BSc.pdf" target="blank">Assignment </a> for the **Client-Side Programming** and **Programming: O.O. Approach** subjects at <a href="https://www.cct.ie" target="blank"> CCT College Dublin </a>, IE.
+ Project created as part of an <a href="./CA3_-_Client-Side_Programming.pdf" target="blank">Assignment </a> for the **Client-Side Programming** and **Programming: O.O. Approach** subjects at <a href="https://www.cct.ie" target="blank"> CCT College Dublin </a>, IE.
 
 ## Objective and project requirements
 
