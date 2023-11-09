@@ -23,6 +23,7 @@ A password validator, which tests whether or not the staff’s desired password 
 ![image](https://github.com/dacsantos/Brazil-Restaurant/assets/72028806/5b6b6114-d7ca-4af3-af55-3a920273bc55)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### **Page 2: Menu**
 
 A web application for a restaurant to calculate the cost of customer orders. 
@@ -39,6 +40,7 @@ a comparison of the cost of the vegetarian meals ordered vs the cost of the non-
 
 ![image](https://github.com/dacsantos/Brazil-Restaurant/assets/72028806/00ecd91c-749e-4704-99cd-70d1ff6d4fc9)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### **Page 3: Kitchen** ###
 
@@ -47,4 +49,4 @@ A visual representation of the items on the menu of the restaurant.
 ![image](https://github.com/dacsantos/Brazil-Restaurant/assets/72028806/4d11fa3b-35f1-456c-9534-23a54f70fdf6)
 
 
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
