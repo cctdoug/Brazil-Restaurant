@@ -3,11 +3,13 @@
 
 ## Desription
 
- Project created as part of an [Assignment](./CA3_-_Client-Side_Programming.pdf) for the **Client-Side Programming** and **Programming: O.O. Approach** subjects at [CCT College Dublin](https://www.cct.ie), IE.
+ Project created as part of an [Assignment](./CA3_-_Client-Side_Programming.pdf) for the 
+ <br>**Client-Side Programming** and **Programming: O.O. Approach** subjects at [CCT College Dublin](https://www.cct.ie), IE.
 
 ## Objective and project requirements
 
 Create a simple interactive website with two pages using a combination of HTML, CSS and JavaScript. 
+<br>The main objective of this project was to showcase the knowledge and understanding of the subjects and technologies used.
 
 ### **Page 1: Login Page**
 
@@ -50,3 +52,4 @@ A visual representation of the items on the menu of the restaurant.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
