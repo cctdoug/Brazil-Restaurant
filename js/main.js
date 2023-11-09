@@ -1,12 +1,11 @@
 // Dish images darken on hover
-// I got this idea from a mini course I did at Udemy
 const dishes = document.querySelectorAll(".dish-wrapper");
 
 dishes.forEach((dish) => {
-  dish.addEventListener("mouseover", () => {
+  dish.addEventListener("mouseenter", () => {
     dish.childNodes[1].classList.add("img-darken");
   });
-  dish.addEventListener("mouseout", () => {
+  dish.addEventListener("mouseleave", () => {
     dish.childNodes[1].classList.remove("img-darken");
   });
 });
@@ -15,7 +14,7 @@ dishes.forEach((dish) => {
 document.getElementById("myBtn").addEventListener("click", getData);
 
 function getData() {
-  //Get API
+  //Get API for random customers display
   fetch("https://randomuser.me/api/?results=5&nat=br,ie")
     .then((res) => res.json())
     .then((data) => {
@@ -40,7 +39,7 @@ function getData() {
                 `;
       });
 
-      //Show On Screen All Data
+      //Show  All Data On Screen
       document.getElementById("output").innerHTML = output;
     });
 }
